@@ -1,0 +1,36 @@
+{
+  "name": "backend-hocuspocus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "lint-check": "eslint \"src/**/*.ts\" --quiet",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format-check": "prettier --check \"src/**/*.ts\"",
+    "tsc": "tsc",
+    "build": "tsc -b",
+    "start": "tsc src/main.ts",
+    "start:watch": "tsc-watch --onSuccess \"node dist/main.js\"",
+    "start:prod": "node dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.7.0+sha512.dc09430156b427f5ecfc79888899e1c39d2d690f004be70e05230b72cb173d96839587545d09429b55ac3c429c801b4dc3c0e002f653830a420fa2dd4e3cf9cf",
+  "dependencies": {
+    "@hocuspocus/server": "^2.15.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "tsc-watch": "^6.2.1",
+    "typescript": "^5.7.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-prettier": "^5.0.0"
+  }
+}
