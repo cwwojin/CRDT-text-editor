@@ -12,7 +12,7 @@
     "build": "tsc -b",
     "start": "tsc src/main.ts",
     "start:watch": "tsc-watch --onSuccess \"node dist/main.js\"",
-    "start:prod": "node dist/main.js"
+    "start:prod": "NODE_ENV=production node dist/main.js"
   },
   "keywords": [],
   "author": "",
