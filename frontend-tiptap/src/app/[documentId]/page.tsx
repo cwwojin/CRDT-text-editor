@@ -13,13 +13,13 @@ export default function Home() {
   const username = query?.get('user') ?? 'John Doe';
 
   const provider = new HocuspocusProvider({
-    url: 'ws://localhost:8001',
+    url: 'http://localhost:8001',
     name: params.documentId as string,
     document: ydoc,
   });
 
   return (
-    <div>
+    <div className="bg-slate-100">
       <Tiptap provider={provider} username={username} />{' '}
     </div>
   );

@@ -13,8 +13,11 @@
   "dependencies": {
     "@hocuspocus/provider": "^2.15.0",
     "@tiptap/core": "^2.10.4",
+    "@tiptap/extension-code-block": "^2.11.0",
     "@tiptap/extension-collaboration": "^2.10.4",
     "@tiptap/extension-collaboration-cursor": "^2.10.4",
+    "@tiptap/extension-highlight": "^2.11.0",
+    "@tiptap/extension-image": "^2.11.0",
     "@tiptap/pm": "^2.10.4",
     "@tiptap/react": "^2.10.4",
     "@tiptap/starter-kit": "^2.10.4",
@@ -26,6 +29,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
