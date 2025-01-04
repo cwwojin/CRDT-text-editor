@@ -24,9 +24,7 @@ const Tiptap = ({ provider, username }: TiptapEditorProps) => {
       },
     },
     extensions: [
-      StarterKit.configure({
-        history: false,
-      }),
+      StarterKit,
       Highlight,
       Image.configure({ inline: true, allowBase64: true }),
       CodeBlock,

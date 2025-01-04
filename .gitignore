@@ -134,3 +134,6 @@ dist
 
 # MongoDB
 .mongo-data
+
+# Redis
+.redis-data

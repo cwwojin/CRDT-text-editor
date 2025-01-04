@@ -14,8 +14,9 @@ export default function Home() {
 
   const provider = new HocuspocusProvider({
     url: 'http://localhost:8001',
-    name: params.documentId as string,
+    name: decodeURIComponent(params.documentId as string),
     document: ydoc,
+    token: 'TOKEN',
   });
 
   return (
