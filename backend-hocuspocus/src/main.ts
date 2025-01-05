@@ -1,9 +1,6 @@
-import { Hocuspocus } from '@hocuspocus/server';
+import { config } from 'dotenv';
+config();
 
-// Configure the server …
-const server = new Hocuspocus({
-  port: 8001,
-});
+import server from './app';
 
-// … and run it!
 server.listen();
